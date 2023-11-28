@@ -1,0 +1,22 @@
+
+echo "# jogo-do-numero-secreto" >> README.md
+git init
+git add README.md
+git commit -m "numero-secreto"
+git config --global user.email "luizfernandooffice@gmail.com"
+git config --global user.name "LuizCorsini"
+git branch -M main
+git remote add numero-secreto git@github.com:LuizCorsini/numero-secreto.git
+git push -u numero-secreto main
+
+=========================
+Gerar Chave SSH
+=========================
+ssh-keygen -t ed25519 -C "luizfernandooffice@gmail.com"
+
+=============
+Reiniciar commit no git
+
+git remote rm origin
+
+git remote add numero-secreto git@github.com:LuizCorsini/numero-secreto.git
